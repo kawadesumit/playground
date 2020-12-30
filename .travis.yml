@@ -2,4 +2,3 @@ language: julia
 julia:
   - nightly
   - 1.5
-  - stable

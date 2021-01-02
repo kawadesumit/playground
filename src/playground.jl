@@ -8,4 +8,7 @@ greet(x, y) = println("Hello World! $x+$y=$(x+y)")
 
 add(x, y) = x + y
 
+include("functions.jl")
+
+
 end # module

@@ -54,6 +54,8 @@ b.y
 @assert b[3] == b.z
 
 # function composition
+addSubtractMultiplyDivideV2(a) = addSubtractMultiplyDivideV2(y=a)
+
 (addSubtractMultiplyDivideV2 ∘ addV3)(1, 2)
 @assert (addSubtractMultiplyDivideV2 ∘ addV3)(1, 2) == addSubtractMultiplyDivideV2(addV3(1, 2))
 

@@ -103,4 +103,15 @@ function printSubTypeGraph(x::Type, delimiter::String)
     end
 end
 
-printSubTypeGraph(Vehicle, "\t- ")
+printSubTypeGraph(Vehicle, " - ")
+
+isa(1, Int)
+isa(1, Float64)
+
+isa(c1, Corolla)
+isa(c2, Corolla)
+isa(c1, Accord)
+
+println(c1)
+Base.show(io::IO, x::Corolla) = print(io, "make: $(x.make)", " ", "year: $(x.year)", " ", "price: $(x.price)")
+println(c1)

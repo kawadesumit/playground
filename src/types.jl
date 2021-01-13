@@ -68,7 +68,7 @@ log(a1);
 log(c21)
 log(c22)
 
-# log(x) = println("$x")
+log(x::Bool) = println("$x")
 log(Car2{Corolla} <: Corolla)
 log(Car2{Corolla} <: Car2{Accord})
 log(Car2{Corolla} <: Car2)
@@ -112,6 +112,6 @@ isa(c1, Corolla)
 isa(c2, Corolla)
 isa(c1, Accord)
 
-println(c1)
+println("w/o explicit show impl => ", c1)
 Base.show(io::IO, x::Corolla) = print(io, "make: $(x.make)", " ", "year: $(x.year)", " ", "price: $(x.price)")
-println(c1)
+println("w/ explicit show impl => ", c1)

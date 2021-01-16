@@ -9,6 +9,6 @@ greet(x, y) = println("Hello World! $x+$y=$(x+y)")
 add(x, y) = x + y
 
 include("functions.jl")
-
+include("modules.jl")
 
 end # module
